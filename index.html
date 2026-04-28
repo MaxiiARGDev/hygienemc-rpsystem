@@ -166,7 +166,8 @@
         <!-- Physiological Needs Section -->
         <section class="soaps-section" data-aos="fade-up">
             <h2 class="section-title">PHYSIOLOGICAL NEEDS</h2>
-            <p style="margin-top: -40px; margin-bottom: 50px; opacity: 0.7; font-size: 1.1rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+            <p
+                style="margin-top: -40px; margin-bottom: 50px; opacity: 0.7; font-size: 1.1rem; max-width: 700px; margin-left: auto; margin-right: auto;">
                 A realistic biological system that adds depth to gameplay. Watch what you eat and drink!
             </p>
             <div class="soap-grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
@@ -179,7 +180,8 @@
                     </div>
                     <div class="soap-info">
                         <h3>Bladder System</h3>
-                        <p>Drinking liquids fills your bladder quickly. Sneak for 5 seconds to release pressure. Use a toilet to avoid getting your feet wet!</p>
+                        <p>Drinking liquids fills your bladder quickly. Sneak for 5 seconds to release pressure. Use a
+                            toilet to avoid getting your feet wet!</p>
                         <div style="margin-top: 15px;">
                             <span class="effect-badge" style="color: var(--accent-yellow);">+ Liquid Intake</span>
                             <span class="effect-badge" style="color: #ff5050;">- Hygiene (Anywhere)</span>
@@ -191,12 +193,14 @@
                 <div class="soap-card" style="border-top: 4px solid #8b4513;">
                     <div class="soap-bubble-container">
                         <div class="soap-bubble-main" style="border-radius: 25px; background: rgba(139, 69, 19, 0.05);">
-                            <div style="font-size: 4rem; opacity: 0.6;">📦</div>
+                            <img src="img/poop.png" alt="Poop Asset"
+                                style="width: 70%; height: auto; filter: drop-shadow(0 5px 15px rgba(0,0,0,0.3));">
                         </div>
                     </div>
                     <div class="soap-info">
                         <h3>Excretion System</h3>
-                        <p>Food doesn't just give you energy. If you ignore nature's call, your hygiene will take a critical 22% hit.</p>
+                        <p>Food doesn't just give you energy. If you ignore nature's call, your hygiene will take a
+                            critical 22% hit.</p>
                         <div style="margin-top: 15px;">
                             <span class="effect-badge" style="color: #8b4513;">+ Solid Intake</span>
                             <span class="effect-badge" style="color: #ff5050;">-22% Hygiene (Anywhere)</span>
@@ -340,7 +344,8 @@
         <!-- Admin Config Section -->
         <section class="soaps-section" data-aos="fade-up">
             <h2 class="section-title">CONFIGURATION POWER</h2>
-            <p style="margin-top: -40px; margin-bottom: 50px; opacity: 0.7; font-size: 1.1rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+            <p
+                style="margin-top: -40px; margin-bottom: 50px; opacity: 0.7; font-size: 1.1rem; max-width: 800px; margin-left: auto; margin-right: auto;">
                 Take total control of your server with a modular and organized structure.
             </p>
 
@@ -373,74 +378,74 @@
                     <span class="filename">config.yml</span>
                 </div>
                 <div class="editor-content" style="white-space: pre;">
-<span class="code-comment">############################################################
-#                    HygieneMC - Config
-############################################################
-# Main global configuration file.</span>
+                    <span class="code-comment">############################################################
+                        # HygieneMC - Config
+                        ############################################################
+                        # Main global configuration file.</span>
 
-<span class="code-key">language-file</span>: <span class="code-val">"lang_en.yml"</span>
+                    <span class="code-key">language-file</span>: <span class="code-val">"lang_en.yml"</span>
 
-<span class="code-key">settings</span>:
-  <span class="code-key">bypass-permission</span>: <span class="code-val">"hygiene.bypass"</span>
-  <span class="code-key">allowed-worlds</span>:
-    - <span class="code-val">"world"</span>
+                    <span class="code-key">settings</span>:
+                    <span class="code-key">bypass-permission</span>: <span class="code-val">"hygiene.bypass"</span>
+                    <span class="code-key">allowed-worlds</span>:
+                    - <span class="code-val">"world"</span>
 
-<span class="code-key">hygiene</span>:
-  <span class="code-key">max</span>: <span class="code-num">100</span>
-  <span class="code-key">min</span>: <span class="code-num">0</span>
-  <span class="code-key">decrease-interval</span>: <span class="code-num">300</span>
-  <span class="code-key">decrease-amount</span>: <span class="code-num">1</span>
+                    <span class="code-key">hygiene</span>:
+                    <span class="code-key">max</span>: <span class="code-num">100</span>
+                    <span class="code-key">min</span>: <span class="code-num">0</span>
+                    <span class="code-key">decrease-interval</span>: <span class="code-num">300</span>
+                    <span class="code-key">decrease-amount</span>: <span class="code-num">1</span>
 
-  <span class="code-comment">########## DIRTY ACTIVITIES ##########</span>
-  <span class="code-key">activities</span>:
-    <span class="code-key">movement-check-interval</span>: <span class="code-num">5</span>
+                    <span class="code-comment">########## DIRTY ACTIVITIES ##########</span>
+                    <span class="code-key">activities</span>:
+                    <span class="code-key">movement-check-interval</span>: <span class="code-num">5</span>
 
-    <span class="code-key">walking</span>:
-      <span class="code-key">enabled</span>: <span class="code-bool">true</span>
-      <span class="code-key">amount</span>: <span class="code-num">1</span>
-      <span class="code-key">blocks-per-loss</span>: <span class="code-num">20.0</span>
+                    <span class="code-key">walking</span>:
+                    <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+                    <span class="code-key">amount</span>: <span class="code-num">1</span>
+                    <span class="code-key">blocks-per-loss</span>: <span class="code-num">20.0</span>
 
-    <span class="code-key">running</span>:
-      <span class="code-key">enabled</span>: <span class="code-bool">true</span>
-      <span class="code-key">amount</span>: <span class="code-num">1</span>
-      <span class="code-key">blocks-per-loss</span>: <span class="code-num">10.0</span>
+                    <span class="code-key">running</span>:
+                    <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+                    <span class="code-key">amount</span>: <span class="code-num">1</span>
+                    <span class="code-key">blocks-per-loss</span>: <span class="code-num">10.0</span>
 
-    <span class="code-key">block-break</span>:
-      <span class="code-key">enabled</span>: <span class="code-bool">true</span>
-      <span class="code-key">amount</span>: <span class="code-num">1</span>
-      <span class="code-key">cooldown-ms</span>: <span class="code-num">500</span>
+                    <span class="code-key">block-break</span>:
+                    <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+                    <span class="code-key">amount</span>: <span class="code-num">1</span>
+                    <span class="code-key">cooldown-ms</span>: <span class="code-num">500</span>
 
-    <span class="code-key">eating</span>:
-      <span class="code-key">enabled</span>: <span class="code-bool">true</span>
-      <span class="code-key">amount</span>: <span class="code-num">2</span>
+                    <span class="code-key">eating</span>:
+                    <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+                    <span class="code-key">amount</span>: <span class="code-num">2</span>
 
-    <span class="code-key">kill-mob</span>:
-      <span class="code-key">enabled</span>: <span class="code-bool">true</span>
-      <span class="code-key">amount</span>: <span class="code-num">3</span>
-      <span class="code-key">hostile-only</span>: <span class="code-bool">false</span>
+                    <span class="code-key">kill-mob</span>:
+                    <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+                    <span class="code-key">amount</span>: <span class="code-num">3</span>
+                    <span class="code-key">hostile-only</span>: <span class="code-bool">false</span>
 
-<span class="code-comment">########## SMELL ##########</span>
-<span class="code-key">smell</span>:
-  <span class="code-key">enabled</span>: <span class="code-bool">true</span>
-  <span class="code-key">threshold</span>: <span class="code-num">30</span>
-  <span class="code-key">radius</span>: <span class="code-num">5.0</span>
-  <span class="code-key">nausea-duration</span>: <span class="code-num">60</span>
+                    <span class="code-comment">########## SMELL ##########</span>
+                    <span class="code-key">smell</span>:
+                    <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+                    <span class="code-key">threshold</span>: <span class="code-num">30</span>
+                    <span class="code-key">radius</span>: <span class="code-num">5.0</span>
+                    <span class="code-key">nausea-duration</span>: <span class="code-num">60</span>
 
-<span class="code-comment">########## NEGATIVE EFFECTS ##########</span>
-<span class="code-key">effects</span>:
-  <span class="code-key">enabled</span>: <span class="code-bool">true</span>
-  <span class="code-key">tiers</span>:
-    <span class="code-key">tier2-threshold</span>: <span class="code-num">30</span>
-    <span class="code-key">tier3-threshold</span>: <span class="code-num">15</span>
+                    <span class="code-comment">########## NEGATIVE EFFECTS ##########</span>
+                    <span class="code-key">effects</span>:
+                    <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+                    <span class="code-key">tiers</span>:
+                    <span class="code-key">tier2-threshold</span>: <span class="code-num">30</span>
+                    <span class="code-key">tier3-threshold</span>: <span class="code-num">15</span>
 
-<span class="code-comment">########## INTERFACE ##########</span>
-<span class="code-key">ui</span>:
-  <span class="code-key">bossbar</span>:
-    <span class="code-key">enabled</span>: <span class="code-bool">true</span>
-  <span class="code-key">actionbar</span>:
-    <span class="code-key">enabled</span>: <span class="code-bool">true</span>
-  <span class="code-key">scoreboard</span>:
-    <span class="code-key">enabled</span>: <span class="code-bool">false</span>
+                    <span class="code-comment">########## INTERFACE ##########</span>
+                    <span class="code-key">ui</span>:
+                    <span class="code-key">bossbar</span>:
+                    <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+                    <span class="code-key">actionbar</span>:
+                    <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+                    <span class="code-key">scoreboard</span>:
+                    <span class="code-key">enabled</span>: <span class="code-bool">false</span>
                 </div>
             </div>
 
@@ -452,173 +457,188 @@
                     <span class="filename">soap.yml</span>
                 </div>
                 <div class="editor-content" style="white-space: pre;">
-<span class="code-key">variants</span>:
-  <span class="code-key">pink</span>:
-    <span class="code-key">material</span>: <span class="code-val">SLIME_BALL</span>
-    <span class="code-key">category</span>: <span class="code-val">sweet</span>
-    <span class="code-key">model</span>: <span class="code-val">soap_pink</span>
-    <span class="code-key">display-name</span>: <span class="code-val">"&dPink Soap"</span>
-    <span class="code-key">hygiene-amount</span>: <span class="code-num">60</span>
-    <span class="code-key">durability-cost</span>: <span class="code-num">1</span>
-    <span class="code-key">duration</span>: <span class="code-num">40</span>
-    <span class="code-key">cooldown</span>: <span class="code-num">1000</span>
-    <span class="code-key">cancel-on-move</span>: <span class="code-bool">false</span>
-    <span class="code-key">price</span>: <span class="code-num">25.0</span>
-    <span class="code-key">crafting</span>:
-      <span class="code-key">enabled</span>: <span class="code-bool">true</span>
-      <span class="code-key">amount</span>: <span class="code-num">1</span>
-      <span class="code-key">recipes</span>:
-        - <span class="code-key">ingredients</span>: [<span class="code-val">SLIME_BALL</span>, <span class="code-val">PINK_DYE</span>]
-        - <span class="code-key">ingredients</span>: [<span class="code-val">HONEYCOMB</span>, <span class="code-val">PINK_DYE</span>]
-        - <span class="code-key">ingredients</span>: [<span class="code-val">RESIN_CLUMP</span>, <span class="code-val">PINK_DYE</span>]
-    <span class="code-key">lore</span>:
-      - <span class="code-val">"&7Cleans your body"</span>
-      - <span class="code-val">"&7Leaves a sweet scent"</span>
-    <span class="code-key">effects</span>:
-      - <span class="code-key">type</span>: <span class="code-val">SPEED</span>
-        <span class="code-key">duration</span>: <span class="code-num">200</span>
-        <span class="code-key">amplifier</span>: <span class="code-num">0</span>
-        <span class="code-key">ambient</span>: <span class="code-bool">false</span>
-        <span class="code-key">particles</span>: <span class="code-bool">true</span>
-        <span class="code-key">icon</span>: <span class="code-bool">true</span>
-    <span class="code-key">commands</span>:
-      - <span class="code-key">executor</span>: <span class="code-val">CONSOLE</span>
-        <span class="code-key">command</span>: <span class="code-val">"say {player} used soap variant {variant}"</span>
-    <span class="code-key">sound</span>:
-      <span class="code-key">enabled</span>: <span class="code-bool">true</span>
-      <span class="code-key">name</span>: <span class="code-val">ENTITY_PLAYER_LEVELUP</span>
-      <span class="code-key">volume</span>: <span class="code-num">0.8</span>
-      <span class="code-key">pitch</span>: <span class="code-num">1.4</span>
-    <span class="code-key">particles</span>:
-      <span class="code-key">enabled</span>: <span class="code-bool">true</span>
-      <span class="code-key">type</span>: <span class="code-val">HEART</span>
-      <span class="code-key">count</span>: <span class="code-num">8</span>
-      <span class="code-key">offset-x</span>: <span class="code-num">0.3</span>
-      <span class="code-key">offset-y</span>: <span class="code-num">0.5</span>
-      <span class="code-key">offset-z</span>: <span class="code-num">0.3</span>
-      <span class="code-key">extra</span>: <span class="code-num">0.01</span>
-    <span class="code-key">title</span>:
-      <span class="code-key">enabled</span>: <span class="code-bool">true</span>
-      <span class="code-key">title</span>: <span class="code-val">"&dPink Soap"</span>
-      <span class="code-key">subtitle</span>: <span class="code-val">"&fNow you smell like bubblegum"</span>
-      <span class="code-key">fade-in</span>: <span class="code-num">10</span>
-      <span class="code-key">stay</span>: <span class="code-num">40</span>
-      <span class="code-key">fade-out</span>: <span class="code-num">10</span>
+                    <span class="code-key">variants</span>:
+                    <span class="code-key">pink</span>:
+                    <span class="code-key">material</span>: <span class="code-val">SLIME_BALL</span>
+                    <span class="code-key">category</span>: <span class="code-val">sweet</span>
+                    <span class="code-key">model</span>: <span class="code-val">soap_pink</span>
+                    <span class="code-key">display-name</span>: <span class="code-val">"&dPink Soap"</span>
+                    <span class="code-key">hygiene-amount</span>: <span class="code-num">60</span>
+                    <span class="code-key">durability-cost</span>: <span class="code-num">1</span>
+                    <span class="code-key">duration</span>: <span class="code-num">40</span>
+                    <span class="code-key">cooldown</span>: <span class="code-num">1000</span>
+                    <span class="code-key">cancel-on-move</span>: <span class="code-bool">false</span>
+                    <span class="code-key">price</span>: <span class="code-num">25.0</span>
+                    <span class="code-key">crafting</span>:
+                    <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+                    <span class="code-key">amount</span>: <span class="code-num">1</span>
+                    <span class="code-key">recipes</span>:
+                    - <span class="code-key">ingredients</span>: [<span class="code-val">SLIME_BALL</span>, <span
+                        class="code-val">PINK_DYE</span>]
+                    - <span class="code-key">ingredients</span>: [<span class="code-val">HONEYCOMB</span>, <span
+                        class="code-val">PINK_DYE</span>]
+                    - <span class="code-key">ingredients</span>: [<span class="code-val">RESIN_CLUMP</span>, <span
+                        class="code-val">PINK_DYE</span>]
+                    <span class="code-key">lore</span>:
+                    - <span class="code-val">"&7Cleans your body"</span>
+                    - <span class="code-val">"&7Leaves a sweet scent"</span>
+                    <span class="code-key">effects</span>:
+                    - <span class="code-key">type</span>: <span class="code-val">SPEED</span>
+                    <span class="code-key">duration</span>: <span class="code-num">200</span>
+                    <span class="code-key">amplifier</span>: <span class="code-num">0</span>
+                    <span class="code-key">ambient</span>: <span class="code-bool">false</span>
+                    <span class="code-key">particles</span>: <span class="code-bool">true</span>
+                    <span class="code-key">icon</span>: <span class="code-bool">true</span>
+                    <span class="code-key">commands</span>:
+                    - <span class="code-key">executor</span>: <span class="code-val">CONSOLE</span>
+                    <span class="code-key">command</span>: <span class="code-val">"say {player} used soap variant
+                        {variant}"</span>
+                    <span class="code-key">sound</span>:
+                    <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+                    <span class="code-key">name</span>: <span class="code-val">ENTITY_PLAYER_LEVELUP</span>
+                    <span class="code-key">volume</span>: <span class="code-num">0.8</span>
+                    <span class="code-key">pitch</span>: <span class="code-num">1.4</span>
+                    <span class="code-key">particles</span>:
+                    <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+                    <span class="code-key">type</span>: <span class="code-val">HEART</span>
+                    <span class="code-key">count</span>: <span class="code-num">8</span>
+                    <span class="code-key">offset-x</span>: <span class="code-num">0.3</span>
+                    <span class="code-key">offset-y</span>: <span class="code-num">0.5</span>
+                    <span class="code-key">offset-z</span>: <span class="code-num">0.3</span>
+                    <span class="code-key">extra</span>: <span class="code-num">0.01</span>
+                    <span class="code-key">title</span>:
+                    <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+                    <span class="code-key">title</span>: <span class="code-val">"&dPink Soap"</span>
+                    <span class="code-key">subtitle</span>: <span class="code-val">"&fNow you smell like
+                        bubblegum"</span>
+                    <span class="code-key">fade-in</span>: <span class="code-num">10</span>
+                    <span class="code-key">stay</span>: <span class="code-num">40</span>
+                    <span class="code-key">fade-out</span>: <span class="code-num">10</span>
 
-  <span class="code-key">blue</span>:
-    <span class="code-key">material</span>: <span class="code-val">SLIME_BALL</span>
-    <span class="code-key">category</span>: <span class="code-val">fresh</span>
-    <span class="code-key">model</span>: <span class="code-val">soap_blue</span>
-    <span class="code-key">display-name</span>: <span class="code-val">"&bBlue Soap"</span>
-    <span class="code-key">hygiene-amount</span>: <span class="code-num">60</span>
-    <span class="code-key">durability-cost</span>: <span class="code-num">1</span>
-    <span class="code-key">duration</span>: <span class="code-num">35</span>
-    <span class="code-key">cooldown</span>: <span class="code-num">900</span>
-    <span class="code-key">cancel-on-move</span>: <span class="code-bool">false</span>
-    <span class="code-key">crafting</span>:
-      <span class="code-key">enabled</span>: <span class="code-bool">true</span>
-      <span class="code-key">amount</span>: <span class="code-num">1</span>
-      <span class="code-key">recipes</span>:
-        - <span class="code-key">ingredients</span>: [<span class="code-val">SLIME_BALL</span>, <span class="code-val">BLUE_DYE</span>]
-        - <span class="code-key">ingredients</span>: [<span class="code-val">HONEYCOMB</span>, <span class="code-val">BLUE_DYE</span>]
-        - <span class="code-key">ingredients</span>: [<span class="code-val">RESIN_CLUMP</span>, <span class="code-val">BLUE_DYE</span>]
-    <span class="code-key">lore</span>:
-      - <span class="code-val">"&7Cleans your body"</span>
-      - <span class="code-val">"&7Leaves a fresh scent"</span>
+                    <span class="code-key">blue</span>:
+                    <span class="code-key">material</span>: <span class="code-val">SLIME_BALL</span>
+                    <span class="code-key">category</span>: <span class="code-val">fresh</span>
+                    <span class="code-key">model</span>: <span class="code-val">soap_blue</span>
+                    <span class="code-key">display-name</span>: <span class="code-val">"&bBlue Soap"</span>
+                    <span class="code-key">hygiene-amount</span>: <span class="code-num">60</span>
+                    <span class="code-key">durability-cost</span>: <span class="code-num">1</span>
+                    <span class="code-key">duration</span>: <span class="code-num">35</span>
+                    <span class="code-key">cooldown</span>: <span class="code-num">900</span>
+                    <span class="code-key">cancel-on-move</span>: <span class="code-bool">false</span>
+                    <span class="code-key">crafting</span>:
+                    <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+                    <span class="code-key">amount</span>: <span class="code-num">1</span>
+                    <span class="code-key">recipes</span>:
+                    - <span class="code-key">ingredients</span>: [<span class="code-val">SLIME_BALL</span>, <span
+                        class="code-val">BLUE_DYE</span>]
+                    - <span class="code-key">ingredients</span>: [<span class="code-val">HONEYCOMB</span>, <span
+                        class="code-val">BLUE_DYE</span>]
+                    - <span class="code-key">ingredients</span>: [<span class="code-val">RESIN_CLUMP</span>, <span
+                        class="code-val">BLUE_DYE</span>]
+                    <span class="code-key">lore</span>:
+                    - <span class="code-val">"&7Cleans your body"</span>
+                    - <span class="code-val">"&7Leaves a fresh scent"</span>
 
-  <span class="code-key">red</span>:
-    <span class="code-key">material</span>: <span class="code-val">SLIME_BALL</span>
-    <span class="code-key">category</span>: <span class="code-val">intense</span>
-    <span class="code-key">model</span>: <span class="code-val">soap_red</span>
-    <span class="code-key">display-name</span>: <span class="code-val">"&cRed Soap"</span>
-    <span class="code-key">hygiene-amount</span>: <span class="code-num">65</span>
-    <span class="code-key">durability-cost</span>: <span class="code-num">1</span>
-    <span class="code-key">duration</span>: <span class="code-num">30</span>
-    <span class="code-key">cooldown</span>: <span class="code-num">850</span>
-    <span class="code-key">cancel-on-move</span>: <span class="code-bool">false</span>
-    <span class="code-key">crafting</span>:
-      <span class="code-key">enabled</span>: <span class="code-bool">true</span>
-      <span class="code-key">amount</span>: <span class="code-num">1</span>
-      <span class="code-key">recipes</span>:
-        - <span class="code-key">ingredients</span>: [<span class="code-val">SLIME_BALL</span>, <span class="code-val">RED_DYE</span>]
-        - <span class="code-key">ingredients</span>: [<span class="code-val">HONEYCOMB</span>, <span class="code-val">RED_DYE</span>]
-        - <span class="code-key">ingredients</span>: [<span class="code-val">RESIN_CLUMP</span>, <span class="code-val">RED_DYE</span>]
-    <span class="code-key">lore</span>:
-      - <span class="code-val">"&7Cleans your body"</span>
-      - <span class="code-val">"&7Leaves a strong scent"</span>
+                    <span class="code-key">red</span>:
+                    <span class="code-key">material</span>: <span class="code-val">SLIME_BALL</span>
+                    <span class="code-key">category</span>: <span class="code-val">intense</span>
+                    <span class="code-key">model</span>: <span class="code-val">soap_red</span>
+                    <span class="code-key">display-name</span>: <span class="code-val">"&cRed Soap"</span>
+                    <span class="code-key">hygiene-amount</span>: <span class="code-num">65</span>
+                    <span class="code-key">durability-cost</span>: <span class="code-num">1</span>
+                    <span class="code-key">duration</span>: <span class="code-num">30</span>
+                    <span class="code-key">cooldown</span>: <span class="code-num">850</span>
+                    <span class="code-key">cancel-on-move</span>: <span class="code-bool">false</span>
+                    <span class="code-key">crafting</span>:
+                    <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+                    <span class="code-key">amount</span>: <span class="code-num">1</span>
+                    <span class="code-key">recipes</span>:
+                    - <span class="code-key">ingredients</span>: [<span class="code-val">SLIME_BALL</span>, <span
+                        class="code-val">RED_DYE</span>]
+                    - <span class="code-key">ingredients</span>: [<span class="code-val">HONEYCOMB</span>, <span
+                        class="code-val">RED_DYE</span>]
+                    - <span class="code-key">ingredients</span>: [<span class="code-val">RESIN_CLUMP</span>, <span
+                        class="code-val">RED_DYE</span>]
+                    <span class="code-key">lore</span>:
+                    - <span class="code-val">"&7Cleans your body"</span>
+                    - <span class="code-val">"&7Leaves a strong scent"</span>
 
-  <span class="code-key">gum_deluxe</span>:
-    <span class="code-key">material</span>: <span class="code-val">SLIME_BALL</span>
-    <span class="code-key">category</span>: <span class="code-val">premium</span>
-    <span class="code-key">model</span>: <span class="code-val">soap_gold</span>
-    <span class="code-key">display-name</span>: <span class="code-val">"&eVanilla Deluxe Soap"</span>
-    <span class="code-key">hygiene-amount</span>: <span class="code-num">90</span>
-    <span class="code-key">durability-cost</span>: <span class="code-num">1</span>
-    <span class="code-key">duration</span>: <span class="code-num">20</span>
-    <span class="code-key">cooldown</span>: <span class="code-num">500</span>
-    <span class="code-key">cancel-on-move</span>: <span class="code-bool">false</span>
-    <span class="code-key">price</span>: <span class="code-num">120.0</span>
-    <span class="code-key">crafting</span>:
-      <span class="code-key">enabled</span>: <span class="code-bool">true</span>
-      <span class="code-key">amount</span>: <span class="code-num">1</span>
-      <span class="code-key">recipes</span>:
-        - <span class="code-key">ingredients</span>: [<span class="code-val">SLIME_BALL</span>, <span class="code-val">YELLOW_DYE</span>, <span class="code-val">GOLD_NUGGET</span>]
-        - <span class="code-key">ingredients</span>: [<span class="code-val">HONEYCOMB</span>, <span class="code-val">YELLOW_DYE</span>, <span class="code-val">GOLD_NUGGET</span>]
-        - <span class="code-key">ingredients</span>: [<span class="code-val">RESIN_CLUMP</span>, <span class="code-val">YELLOW_DYE</span>, <span class="code-val">GOLD_NUGGET</span>]
-    <span class="code-key">lore</span>:
-      - <span class="code-val">"&7A premium soap with a"</span>
-      - <span class="code-val">"&7strong fresh vanilla scent"</span>
-      - <span class="code-val">"&r"</span>
-      - <span class="code-val">"&eIncludes bonuses on use"</span>
-    <span class="code-key">effects</span>:
-      - <span class="code-key">type</span>: <span class="code-val">SPEED</span>
-        <span class="code-key">duration</span>: <span class="code-num">400</span>
-        <span class="code-key">amplifier</span>: <span class="code-num">1</span>
-        <span class="code-key">ambient</span>: <span class="code-bool">false</span>
-        <span class="code-key">particles</span>: <span class="code-bool">true</span>
-        <span class="code-key">icon</span>: <span class="code-bool">true</span>
-      - <span class="code-key">type</span>: <span class="code-val">REGENERATION</span>
-        <span class="code-key">duration</span>: <span class="code-num">120</span>
-        <span class="code-key">amplifier</span>: <span class="code-num">0</span>
-        <span class="code-key">ambient</span>: <span class="code-bool">false</span>
-        <span class="code-key">particles</span>: <span class="code-bool">true</span>
-        <span class="code-key">icon</span>: <span class="code-bool">true</span>
-    <span class="code-key">sound</span>:
-      <span class="code-key">enabled</span>: <span class="code-bool">true</span>
-      <span class="code-key">name</span>: <span class="code-val">ENTITY_EXPERIENCE_ORB_PICKUP</span>
-      <span class="code-key">volume</span>: <span class="code-num">1.0</span>
-      <span class="code-key">pitch</span>: <span class="code-num">1.6</span>
-    <span class="code-key">particles</span>:
-      <span class="code-key">enabled</span>: <span class="code-bool">true</span>
-      <span class="code-key">type</span>: <span class="code-val">CHERRY_LEAVES</span>
-      <span class="code-key">count</span>: <span class="code-num">20</span>
-      <span class="code-key">offset-x</span>: <span class="code-num">0.35</span>
-      <span class="code-key">offset-y</span>: <span class="code-num">0.6</span>
-      <span class="code-key">offset-z</span>: <span class="code-num">0.35</span>
-      <span class="code-key">extra</span>: <span class="code-num">0.02</span>
-    <span class="code-key">title</span>:
-      <span class="code-key">enabled</span>: <span class="code-bool">true</span>
-      <span class="code-key">title</span>: <span class="code-val">"&dDeluxe Aroma"</span>
-      <span class="code-key">subtitle</span>: <span class="code-val">"&fNow you smell like fresh vanilla"</span>
-      <span class="code-key">fade-in</span>: <span class="code-num">10</span>
-      <span class="code-key">stay</span>: <span class="code-num">50</span>
-      <span class="code-key">fade-out</span>: <span class="code-num">15</span>
+                    <span class="code-key">gum_deluxe</span>:
+                    <span class="code-key">material</span>: <span class="code-val">SLIME_BALL</span>
+                    <span class="code-key">category</span>: <span class="code-val">premium</span>
+                    <span class="code-key">model</span>: <span class="code-val">soap_gold</span>
+                    <span class="code-key">display-name</span>: <span class="code-val">"&eVanilla Deluxe Soap"</span>
+                    <span class="code-key">hygiene-amount</span>: <span class="code-num">90</span>
+                    <span class="code-key">durability-cost</span>: <span class="code-num">1</span>
+                    <span class="code-key">duration</span>: <span class="code-num">20</span>
+                    <span class="code-key">cooldown</span>: <span class="code-num">500</span>
+                    <span class="code-key">cancel-on-move</span>: <span class="code-bool">false</span>
+                    <span class="code-key">price</span>: <span class="code-num">120.0</span>
+                    <span class="code-key">crafting</span>:
+                    <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+                    <span class="code-key">amount</span>: <span class="code-num">1</span>
+                    <span class="code-key">recipes</span>:
+                    - <span class="code-key">ingredients</span>: [<span class="code-val">SLIME_BALL</span>, <span
+                        class="code-val">YELLOW_DYE</span>, <span class="code-val">GOLD_NUGGET</span>]
+                    - <span class="code-key">ingredients</span>: [<span class="code-val">HONEYCOMB</span>, <span
+                        class="code-val">YELLOW_DYE</span>, <span class="code-val">GOLD_NUGGET</span>]
+                    - <span class="code-key">ingredients</span>: [<span class="code-val">RESIN_CLUMP</span>, <span
+                        class="code-val">YELLOW_DYE</span>, <span class="code-val">GOLD_NUGGET</span>]
+                    <span class="code-key">lore</span>:
+                    - <span class="code-val">"&7A premium soap with a"</span>
+                    - <span class="code-val">"&7strong fresh vanilla scent"</span>
+                    - <span class="code-val">"&r"</span>
+                    - <span class="code-val">"&eIncludes bonuses on use"</span>
+                    <span class="code-key">effects</span>:
+                    - <span class="code-key">type</span>: <span class="code-val">SPEED</span>
+                    <span class="code-key">duration</span>: <span class="code-num">400</span>
+                    <span class="code-key">amplifier</span>: <span class="code-num">1</span>
+                    <span class="code-key">ambient</span>: <span class="code-bool">false</span>
+                    <span class="code-key">particles</span>: <span class="code-bool">true</span>
+                    <span class="code-key">icon</span>: <span class="code-bool">true</span>
+                    - <span class="code-key">type</span>: <span class="code-val">REGENERATION</span>
+                    <span class="code-key">duration</span>: <span class="code-num">120</span>
+                    <span class="code-key">amplifier</span>: <span class="code-num">0</span>
+                    <span class="code-key">ambient</span>: <span class="code-bool">false</span>
+                    <span class="code-key">particles</span>: <span class="code-bool">true</span>
+                    <span class="code-key">icon</span>: <span class="code-bool">true</span>
+                    <span class="code-key">sound</span>:
+                    <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+                    <span class="code-key">name</span>: <span class="code-val">ENTITY_EXPERIENCE_ORB_PICKUP</span>
+                    <span class="code-key">volume</span>: <span class="code-num">1.0</span>
+                    <span class="code-key">pitch</span>: <span class="code-num">1.6</span>
+                    <span class="code-key">particles</span>:
+                    <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+                    <span class="code-key">type</span>: <span class="code-val">CHERRY_LEAVES</span>
+                    <span class="code-key">count</span>: <span class="code-num">20</span>
+                    <span class="code-key">offset-x</span>: <span class="code-num">0.35</span>
+                    <span class="code-key">offset-y</span>: <span class="code-num">0.6</span>
+                    <span class="code-key">offset-z</span>: <span class="code-num">0.35</span>
+                    <span class="code-key">extra</span>: <span class="code-num">0.02</span>
+                    <span class="code-key">title</span>:
+                    <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+                    <span class="code-key">title</span>: <span class="code-val">"&dDeluxe Aroma"</span>
+                    <span class="code-key">subtitle</span>: <span class="code-val">"&fNow you smell like fresh
+                        vanilla"</span>
+                    <span class="code-key">fade-in</span>: <span class="code-num">10</span>
+                    <span class="code-key">stay</span>: <span class="code-num">50</span>
+                    <span class="code-key">fade-out</span>: <span class="code-num">15</span>
 
-<span class="code-comment">########## ACTIVE WASHING ##########</span>
-<span class="code-key">active</span>:
-  <span class="code-key">enabled</span>: <span class="code-bool">true</span>
-  <span class="code-key">material</span>: <span class="code-val">SLIME_BALL</span>
-  <span class="code-key">hygiene-amount</span>: <span class="code-num">60</span>
-  <span class="code-key">durability-cost</span>: <span class="code-num">1</span>
-  <span class="code-key">duration</span>: <span class="code-num">40</span>
-  <span class="code-key">cooldown</span>: <span class="code-num">1000</span>
-  <span class="code-key">cancel-on-move</span>: <span class="code-bool">false</span>
+                    <span class="code-comment">########## ACTIVE WASHING ##########</span>
+                    <span class="code-key">active</span>:
+                    <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+                    <span class="code-key">material</span>: <span class="code-val">SLIME_BALL</span>
+                    <span class="code-key">hygiene-amount</span>: <span class="code-num">60</span>
+                    <span class="code-key">durability-cost</span>: <span class="code-num">1</span>
+                    <span class="code-key">duration</span>: <span class="code-num">40</span>
+                    <span class="code-key">cooldown</span>: <span class="code-num">1000</span>
+                    <span class="code-key">cancel-on-move</span>: <span class="code-bool">false</span>
 
-<span class="code-comment">########## PASSIVE BATHING ##########</span>
-<span class="code-key">passive</span>:
-  <span class="code-key">enabled</span>: <span class="code-bool">true</span>
-  <span class="code-key">hygiene-amount</span>: <span class="code-num">5</span>
-  <span class="code-key">interval</span>: <span class="code-num">100</span>
+                    <span class="code-comment">########## PASSIVE BATHING ##########</span>
+                    <span class="code-key">passive</span>:
+                    <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+                    <span class="code-key">hygiene-amount</span>: <span class="code-num">5</span>
+                    <span class="code-key">interval</span>: <span class="code-num">100</span>
                 </div>
             </div>
         </section>
