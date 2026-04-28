@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HygieneMC - Minecraft Immersive Hygiene System</title>
+    <meta name="description"
+        content="HygieneMC is the ultimate hygiene plugin for Minecraft. Add realism with soap, showers, and dynamic cleanliness mechanics.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Dancing+Script:wght@700&family=Inter:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="promotion-hygienemc.css">
+</head>
+
+<body>
+
+    <div class="bubble-container" id="bubbles"></div>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <header>
+            <h1 class="main-title">HYGIENEMC</h1>
+            <p class="subtitle">Immersive Hygiene System</p>
+
+            <div class="hero-image-wrapper">
+                <img src="./img/logo.png" alt="HygieneMC Logo">
+            </div>
+
+            <div class="description-box">
+                <div class="divider"></div>
+                <p class="desc-text">
+                    HYGIENEMC INTRODUCES A DYNAMIC MECHANIC WHERE PLAYERS MUST MAINTAIN THEIR CLEANLINESS TO AVOID
+                    NEGATIVE EFFECTS AND FULLY IMMERSE THEMSELVES IN THE WORLD.
+                </p>
+                <div class="divider"></div>
+            </div>
+        </header>
+
+        <!-- Soaps Section -->
+        <section class="soaps-section" data-aos="fade-up">
+            <h2 class="section-title">ENDLESS POSSIBILITIES FOR SOAPS</h2>
+            <div class="soap-grid">
+                <!-- Pink Soap -->
+                <div class="soap-card">
+                    <div class="soap-bubble-container">
+                        <div class="soap-bubble-main" style="box-shadow: 0 0 25px rgba(255, 126, 179, 0.4);">
+                            <img src="./img/soap_pink.png" alt="Pink Soap" class="soap-icon">
+                        </div>
+                    </div>
+                    <div class="soap-info">
+                        <h3>Pink Soap</h3>
+                        <p>Sweet bubblegum scent. Increases your speed after bathing!</p>
+                        <span class="effect-badge" style="color: #ff7eb3;">+ Speed I</span>
+                    </div>
+                </div>
+
+                <!-- Blue Soap -->
+                <div class="soap-card">
+                    <div class="soap-bubble-container">
+                        <div class="soap-bubble-main" style="box-shadow: 0 0 25px rgba(122, 252, 255, 0.4);">
+                            <img src="./img/soap_blue.png" alt="Blue Soap" class="soap-icon">
+                        </div>
+                    </div>
+                    <div class="soap-info">
+                        <h3>Blue Soap</h3>
+                        <p>Instant oceanic freshness. Deep and fast cleaning.</p>
+                        <span class="effect-badge" style="color: #7afcff;">Freshness</span>
+                    </div>
+                </div>
+
+                <!-- Red Soap -->
+                <div class="soap-card">
+                    <div class="soap-bubble-container">
+                        <div class="soap-bubble-main" style="box-shadow: 0 0 25px rgba(255, 80, 80, 0.4);">
+                            <img src="./img/soap_red.png" alt="Red Soap" class="soap-icon">
+                        </div>
+                    </div>
+                    <div class="soap-info">
+                        <h3>Red Soap</h3>
+                        <p>Intense aroma. Removes even the most persistent dirt.</p>
+                        <span class="effect-badge" style="color: #ff5050;">Intense Clean</span>
+                    </div>
+                </div>
+
+                <!-- Vanilla Deluxe -->
+                <div class="soap-card">
+                    <div class="soap-bubble-container">
+                        <div class="soap-bubble-main" style="box-shadow: 0 0 25px rgba(255, 215, 0, 0.5);">
+                            <img src="./img/soap_yellow.png" alt="Deluxe Soap" class="soap-icon">
+                        </div>
+                    </div>
+                    <div class="soap-info">
+                        <h3>Vanilla Deluxe</h3>
+                        <p>Premium experience. Vanilla scent and total regeneration.</p>
+                        <span class="effect-badge" style="color: #ffd700;">+ Speed II + Regen</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Toilets Section -->
+        <section class="soaps-section" data-aos="fade-up">
+            <h2 class="section-title">EXCLUSIVE TOILETS & FURNITURE</h2>
+            <div class="soap-grid">
+                <!-- White Toilet -->
+                <div class="soap-card">
+                    <div class="soap-bubble-container">
+                        <div class="soap-bubble-main"
+                            style="border-radius: 20px; box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);">
+                            <img src="./img/toilet_v1.png" alt="White Toilet" class="soap-icon" style="width: 90%;">
+                        </div>
+                    </div>
+                    <div class="soap-info">
+                        <h3>White Toilet</h3>
+                        <p>Classic quartz design. Allows for fast and effective washing.</p>
+                        <span class="effect-badge" style="color: #ffffff;">Quick Wash</span>
+                    </div>
+                </div>
+
+                <!-- Blue Toilet -->
+                <div class="soap-card">
+                    <div class="soap-bubble-container">
+                        <div class="soap-bubble-main"
+                            style="border-radius: 20px; box-shadow: 0 0 25px rgba(122, 252, 255, 0.3);">
+                            <img src="./img/toilet_blue.png" alt="Blue Toilet" class="soap-icon" style="width: 90%;">
+                        </div>
+                    </div>
+                    <div class="soap-info">
+                        <h3>Blue Toilet</h3>
+                        <p>Blue decorative version. Give your bathroom a fresh touch.</p>
+                        <span class="effect-badge" style="color: #7afcff;">Fresh Look</span>
+                    </div>
+                </div>
+
+                <!-- Pink Toilet -->
+                <div class="soap-card">
+                    <div class="soap-bubble-container">
+                        <div class="soap-bubble-main"
+                            style="border-radius: 20px; box-shadow: 0 0 25px rgba(255, 126, 179, 0.3);">
+                            <img src="./img/toilet_pink.png" alt="Pink Toilet" class="soap-icon" style="width: 90%;">
+                        </div>
+                    </div>
+                    <div class="soap-info">
+                        <h3>Pink Toilet</h3>
+                        <p>Sweet and vibrant aesthetic. Matches perfectly with Pink Soap.</p>
+                        <span class="effect-badge" style="color: #ff7eb3;">Sweet Decor</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tip-box">
+                <p>
+                    💡 TIP: Players can relieve themselves anywhere, but using a <b>toilet</b> will keep them
+                    cleaner and they will only need to wash their hands. Doing it outside a toilet will
+                    severely affect their hygiene!
+                </p>
+            </div>
+        </section>
+
+        <!-- Physiological Needs Section -->
+        <section class="soaps-section" data-aos="fade-up">
+            <h2 class="section-title">PHYSIOLOGICAL NEEDS</h2>
+            <p style="margin-top: -40px; margin-bottom: 50px; opacity: 0.7; font-size: 1.1rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                A realistic biological system that adds depth to gameplay. Watch what you eat and drink!
+            </p>
+            <div class="soap-grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+                <!-- Bladder / Pís -->
+                <div class="soap-card" style="border-top: 4px solid var(--accent-yellow);">
+                    <div class="soap-bubble-container">
+                        <div class="soap-bubble-main" style="border-radius: 25px; background: rgba(255, 215, 0, 0.05);">
+                            <div style="font-size: 4rem; opacity: 0.6;">💧</div>
+                        </div>
+                    </div>
+                    <div class="soap-info">
+                        <h3>Bladder System</h3>
+                        <p>Drinking liquids fills your bladder quickly. Sneak for 5 seconds to release pressure. Use a toilet to avoid getting your feet wet!</p>
+                        <div style="margin-top: 15px;">
+                            <span class="effect-badge" style="color: var(--accent-yellow);">+ Liquid Intake</span>
+                            <span class="effect-badge" style="color: #ff5050;">- Hygiene (Anywhere)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Colon / Caca -->
+                <div class="soap-card" style="border-top: 4px solid #8b4513;">
+                    <div class="soap-bubble-container">
+                        <div class="soap-bubble-main" style="border-radius: 25px; background: rgba(139, 69, 19, 0.05);">
+                            <div style="font-size: 4rem; opacity: 0.6;">📦</div>
+                        </div>
+                    </div>
+                    <div class="soap-info">
+                        <h3>Excretion System</h3>
+                        <p>Food doesn't just give you energy. If you ignore nature's call, your hygiene will take a critical 22% hit.</p>
+                        <div style="margin-top: 15px;">
+                            <span class="effect-badge" style="color: #8b4513;">+ Solid Intake</span>
+                            <span class="effect-badge" style="color: #ff5050;">-22% Hygiene (Anywhere)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Decorative Furniture Section -->
+        <section class="soaps-section" data-aos="fade-up">
+            <h2 class="section-title">DECORATIVE FURNITURE</h2>
+            <div class="soap-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                <!-- Furniture 1: Oak Chair -->
+                <div class="soap-card">
+                    <div class="soap-bubble-container">
+                        <div class="soap-bubble-main" style="border-radius: 15px;">
+                            <div style="font-size: 3rem; opacity: 0.5;">🪑</div>
+                        </div>
+                    </div>
+                    <div class="soap-info">
+                        <h3>Oak Chair</h3>
+                        <p>Perfect for interiors. Hand-carved oak wood.</p>
+                        <span class="effect-badge" style="color: #aaa;">100% Decorative</span>
+                    </div>
+                </div>
+
+                <!-- Furniture 2: Modern Lamp -->
+                <div class="soap-card">
+                    <div class="soap-bubble-container">
+                        <div class="soap-bubble-main" style="border-radius: 15px;">
+                            <div style="font-size: 3rem; opacity: 0.5;">💡</div>
+                        </div>
+                    </div>
+                    <div class="soap-info">
+                        <h3>Modern Lamp</h3>
+                        <p>Light up your bathrooms with modern and minimalist style.</p>
+                        <span class="effect-badge" style="color: #aaa;">100% Decorative</span>
+                    </div>
+                </div>
+
+                <!-- Furniture 3: Placeholder -->
+                <div class="soap-card">
+                    <div class="soap-bubble-container">
+                        <div class="soap-bubble-main"
+                            style="border-radius: 15px; background: rgba(0,0,0,0.1); border: 2px dashed rgba(255,255,255,0.1);">
+                            <div style="font-size: 3rem; opacity: 0.2;">?</div>
+                        </div>
+                    </div>
+                    <div class="soap-info">
+                        <h3>Coming Soon</h3>
+                        <p>New furniture under development for the next update.</p>
+                        <span class="effect-badge" style="color: #aaa;">Coming Soon</span>
+                    </div>
+                </div>
+
+                <!-- Furniture 4: Placeholder -->
+                <div class="soap-card">
+                    <div class="soap-bubble-container">
+                        <div class="soap-bubble-main"
+                            style="border-radius: 15px; background: rgba(0,0,0,0.1); border: 2px dashed rgba(255,255,255,0.1);">
+                            <div style="font-size: 3rem; opacity: 0.2;">?</div>
+                        </div>
+                    </div>
+                    <div class="soap-info">
+                        <h3>Coming Soon</h3>
+                        <p>New furniture under development for the next update.</p>
+                        <span class="effect-badge" style="color: #aaa;">Coming Soon</span>
+                    </div>
+                </div>
+
+                <!-- Furniture 5: Placeholder -->
+                <div class="soap-card">
+                    <div class="soap-bubble-container">
+                        <div class="soap-bubble-main"
+                            style="border-radius: 15px; background: rgba(0,0,0,0.1); border: 2px dashed rgba(255,255,255,0.1);">
+                            <div style="font-size: 3rem; opacity: 0.2;">?</div>
+                        </div>
+                    </div>
+                    <div class="soap-info">
+                        <h3>Coming Soon</h3>
+                        <p>New furniture under development for the next update.</p>
+                        <span class="effect-badge" style="color: #aaa;">Coming Soon</span>
+                    </div>
+                </div>
+
+                <!-- Furniture 6: Placeholder -->
+                <div class="soap-card">
+                    <div class="soap-bubble-container">
+                        <div class="soap-bubble-main"
+                            style="border-radius: 15px; background: rgba(0,0,0,0.1); border: 2px dashed rgba(255,255,255,0.1);">
+                            <div style="font-size: 3rem; opacity: 0.2;">?</div>
+                        </div>
+                    </div>
+                    <div class="soap-info">
+                        <h3>Coming Soon</h3>
+                        <p>New furniture under development for the next update.</p>
+                        <span class="effect-badge" style="color: #aaa;">Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- More Features Section -->
+        <section class="features-container" data-aos="fade-up">
+            <h2 class="section-title">ADVANCED FEATURES</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h4>🫧 Dynamic Activities</h4>
+                    <p>The system detects your actions: running, mining, eating, or fighting monsters will affect your
+                        hygiene level. Living has a price!</p>
+                </div>
+                <div class="feature-item">
+                    <h4>🤢 Smell Aura</h4>
+                    <p>If your hygiene drops below 30%, you'll start emitting bad smell particles and nearby players
+                        will suffer from nausea.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>🚿 Custom Showers</h4>
+                    <p>Not just soaps: craft shower accessories to create automatic cleaning zones in your bases and
+                        castles.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>📊 Integrated HUD</h4>
+                    <p>Visualize your cleanliness with elegant Bossbars, dynamic Actionbars, or even in the server
+                        Scoreboard.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>🎨 Particles and Sounds</h4>
+                    <p>Each soap has its own visual and auditory effects. Hearts, bubbles, and spatial sounds when
+                        washing.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>🛠️ Highly Configurable</h4>
+                    <p>Adjust every aspect: from the time it takes to get dirty to the negative effects of poor
+                        hygiene.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Admin Config Section -->
+        <section class="soaps-section" data-aos="fade-up">
+            <h2 class="section-title">CONFIGURATION POWER</h2>
+            <p style="margin-top: -40px; margin-bottom: 50px; opacity: 0.7; font-size: 1.1rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                Take total control of your server with a modular and organized structure.
+            </p>
+
+            <!-- File Structure Overview -->
+            <div class="file-explorer">
+                <div class="tree-item tree-folder">📂 /plugins/HygieneMC/</div>
+                <div class="tree-indent">
+                    <div class="tree-item tree-folder">📁 config</div>
+                    <div class="tree-indent">
+                        <div class="tree-item tree-folder">📁 lang</div>
+                        <div class="tree-item tree-file">📄 decor.yml</div>
+                        <div class="tree-item tree-file">📄 lavatory.yml</div>
+                        <div class="tree-item tree-file">📄 needs.yml</div>
+                        <div class="tree-item tree-file">📄 shower.yml</div>
+                        <div class="tree-item tree-file">📄 soap.yml</div>
+                        <div class="tree-item tree-file">📄 stages.yml</div>
+                        <div class="tree-item tree-file">📄 ui.yml</div>
+                    </div>
+                    <div class="tree-item tree-folder">📁 data</div>
+                    <div class="tree-item tree-folder">📁 players</div>
+                    <div class="tree-item tree-file">📄 config.yml</div>
+                </div>
+            </div>
+
+            <div class="editor-window">
+                <div class="editor-header">
+                    <div class="dot" style="background: #ff5f56;"></div>
+                    <div class="dot" style="background: #ffbd2e;"></div>
+                    <div class="dot" style="background: #27c93f;"></div>
+                    <span class="filename">config.yml</span>
+                </div>
+                <div class="editor-content" style="white-space: pre;">
+<span class="code-comment">############################################################
+#                    HygieneMC - Config
+############################################################
+# Main global configuration file.</span>
+
+<span class="code-key">language-file</span>: <span class="code-val">"lang_en.yml"</span>
+
+<span class="code-key">settings</span>:
+  <span class="code-key">bypass-permission</span>: <span class="code-val">"hygiene.bypass"</span>
+  <span class="code-key">allowed-worlds</span>:
+    - <span class="code-val">"world"</span>
+
+<span class="code-key">hygiene</span>:
+  <span class="code-key">max</span>: <span class="code-num">100</span>
+  <span class="code-key">min</span>: <span class="code-num">0</span>
+  <span class="code-key">decrease-interval</span>: <span class="code-num">300</span>
+  <span class="code-key">decrease-amount</span>: <span class="code-num">1</span>
+
+  <span class="code-comment">########## DIRTY ACTIVITIES ##########</span>
+  <span class="code-key">activities</span>:
+    <span class="code-key">movement-check-interval</span>: <span class="code-num">5</span>
+
+    <span class="code-key">walking</span>:
+      <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+      <span class="code-key">amount</span>: <span class="code-num">1</span>
+      <span class="code-key">blocks-per-loss</span>: <span class="code-num">20.0</span>
+
+    <span class="code-key">running</span>:
+      <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+      <span class="code-key">amount</span>: <span class="code-num">1</span>
+      <span class="code-key">blocks-per-loss</span>: <span class="code-num">10.0</span>
+
+    <span class="code-key">block-break</span>:
+      <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+      <span class="code-key">amount</span>: <span class="code-num">1</span>
+      <span class="code-key">cooldown-ms</span>: <span class="code-num">500</span>
+
+    <span class="code-key">eating</span>:
+      <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+      <span class="code-key">amount</span>: <span class="code-num">2</span>
+
+    <span class="code-key">kill-mob</span>:
+      <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+      <span class="code-key">amount</span>: <span class="code-num">3</span>
+      <span class="code-key">hostile-only</span>: <span class="code-bool">false</span>
+
+<span class="code-comment">########## SMELL ##########</span>
+<span class="code-key">smell</span>:
+  <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+  <span class="code-key">threshold</span>: <span class="code-num">30</span>
+  <span class="code-key">radius</span>: <span class="code-num">5.0</span>
+  <span class="code-key">nausea-duration</span>: <span class="code-num">60</span>
+
+<span class="code-comment">########## NEGATIVE EFFECTS ##########</span>
+<span class="code-key">effects</span>:
+  <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+  <span class="code-key">tiers</span>:
+    <span class="code-key">tier2-threshold</span>: <span class="code-num">30</span>
+    <span class="code-key">tier3-threshold</span>: <span class="code-num">15</span>
+
+<span class="code-comment">########## INTERFACE ##########</span>
+<span class="code-key">ui</span>:
+  <span class="code-key">bossbar</span>:
+    <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+  <span class="code-key">actionbar</span>:
+    <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+  <span class="code-key">scoreboard</span>:
+    <span class="code-key">enabled</span>: <span class="code-bool">false</span>
+                </div>
+            </div>
+
+            <div class="editor-window">
+                <div class="editor-header">
+                    <div class="dot" style="background: #ff5f56;"></div>
+                    <div class="dot" style="background: #ffbd2e;"></div>
+                    <div class="dot" style="background: #27c93f;"></div>
+                    <span class="filename">soap.yml</span>
+                </div>
+                <div class="editor-content" style="white-space: pre;">
+<span class="code-key">variants</span>:
+  <span class="code-key">pink</span>:
+    <span class="code-key">material</span>: <span class="code-val">SLIME_BALL</span>
+    <span class="code-key">category</span>: <span class="code-val">sweet</span>
+    <span class="code-key">model</span>: <span class="code-val">soap_pink</span>
+    <span class="code-key">display-name</span>: <span class="code-val">"&dPink Soap"</span>
+    <span class="code-key">hygiene-amount</span>: <span class="code-num">60</span>
+    <span class="code-key">durability-cost</span>: <span class="code-num">1</span>
+    <span class="code-key">duration</span>: <span class="code-num">40</span>
+    <span class="code-key">cooldown</span>: <span class="code-num">1000</span>
+    <span class="code-key">cancel-on-move</span>: <span class="code-bool">false</span>
+    <span class="code-key">price</span>: <span class="code-num">25.0</span>
+    <span class="code-key">crafting</span>:
+      <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+      <span class="code-key">amount</span>: <span class="code-num">1</span>
+      <span class="code-key">recipes</span>:
+        - <span class="code-key">ingredients</span>: [<span class="code-val">SLIME_BALL</span>, <span class="code-val">PINK_DYE</span>]
+        - <span class="code-key">ingredients</span>: [<span class="code-val">HONEYCOMB</span>, <span class="code-val">PINK_DYE</span>]
+        - <span class="code-key">ingredients</span>: [<span class="code-val">RESIN_CLUMP</span>, <span class="code-val">PINK_DYE</span>]
+    <span class="code-key">lore</span>:
+      - <span class="code-val">"&7Cleans your body"</span>
+      - <span class="code-val">"&7Leaves a sweet scent"</span>
+    <span class="code-key">effects</span>:
+      - <span class="code-key">type</span>: <span class="code-val">SPEED</span>
+        <span class="code-key">duration</span>: <span class="code-num">200</span>
+        <span class="code-key">amplifier</span>: <span class="code-num">0</span>
+        <span class="code-key">ambient</span>: <span class="code-bool">false</span>
+        <span class="code-key">particles</span>: <span class="code-bool">true</span>
+        <span class="code-key">icon</span>: <span class="code-bool">true</span>
+    <span class="code-key">commands</span>:
+      - <span class="code-key">executor</span>: <span class="code-val">CONSOLE</span>
+        <span class="code-key">command</span>: <span class="code-val">"say {player} used soap variant {variant}"</span>
+    <span class="code-key">sound</span>:
+      <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+      <span class="code-key">name</span>: <span class="code-val">ENTITY_PLAYER_LEVELUP</span>
+      <span class="code-key">volume</span>: <span class="code-num">0.8</span>
+      <span class="code-key">pitch</span>: <span class="code-num">1.4</span>
+    <span class="code-key">particles</span>:
+      <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+      <span class="code-key">type</span>: <span class="code-val">HEART</span>
+      <span class="code-key">count</span>: <span class="code-num">8</span>
+      <span class="code-key">offset-x</span>: <span class="code-num">0.3</span>
+      <span class="code-key">offset-y</span>: <span class="code-num">0.5</span>
+      <span class="code-key">offset-z</span>: <span class="code-num">0.3</span>
+      <span class="code-key">extra</span>: <span class="code-num">0.01</span>
+    <span class="code-key">title</span>:
+      <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+      <span class="code-key">title</span>: <span class="code-val">"&dPink Soap"</span>
+      <span class="code-key">subtitle</span>: <span class="code-val">"&fNow you smell like bubblegum"</span>
+      <span class="code-key">fade-in</span>: <span class="code-num">10</span>
+      <span class="code-key">stay</span>: <span class="code-num">40</span>
+      <span class="code-key">fade-out</span>: <span class="code-num">10</span>
+
+  <span class="code-key">blue</span>:
+    <span class="code-key">material</span>: <span class="code-val">SLIME_BALL</span>
+    <span class="code-key">category</span>: <span class="code-val">fresh</span>
+    <span class="code-key">model</span>: <span class="code-val">soap_blue</span>
+    <span class="code-key">display-name</span>: <span class="code-val">"&bBlue Soap"</span>
+    <span class="code-key">hygiene-amount</span>: <span class="code-num">60</span>
+    <span class="code-key">durability-cost</span>: <span class="code-num">1</span>
+    <span class="code-key">duration</span>: <span class="code-num">35</span>
+    <span class="code-key">cooldown</span>: <span class="code-num">900</span>
+    <span class="code-key">cancel-on-move</span>: <span class="code-bool">false</span>
+    <span class="code-key">crafting</span>:
+      <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+      <span class="code-key">amount</span>: <span class="code-num">1</span>
+      <span class="code-key">recipes</span>:
+        - <span class="code-key">ingredients</span>: [<span class="code-val">SLIME_BALL</span>, <span class="code-val">BLUE_DYE</span>]
+        - <span class="code-key">ingredients</span>: [<span class="code-val">HONEYCOMB</span>, <span class="code-val">BLUE_DYE</span>]
+        - <span class="code-key">ingredients</span>: [<span class="code-val">RESIN_CLUMP</span>, <span class="code-val">BLUE_DYE</span>]
+    <span class="code-key">lore</span>:
+      - <span class="code-val">"&7Cleans your body"</span>
+      - <span class="code-val">"&7Leaves a fresh scent"</span>
+
+  <span class="code-key">red</span>:
+    <span class="code-key">material</span>: <span class="code-val">SLIME_BALL</span>
+    <span class="code-key">category</span>: <span class="code-val">intense</span>
+    <span class="code-key">model</span>: <span class="code-val">soap_red</span>
+    <span class="code-key">display-name</span>: <span class="code-val">"&cRed Soap"</span>
+    <span class="code-key">hygiene-amount</span>: <span class="code-num">65</span>
+    <span class="code-key">durability-cost</span>: <span class="code-num">1</span>
+    <span class="code-key">duration</span>: <span class="code-num">30</span>
+    <span class="code-key">cooldown</span>: <span class="code-num">850</span>
+    <span class="code-key">cancel-on-move</span>: <span class="code-bool">false</span>
+    <span class="code-key">crafting</span>:
+      <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+      <span class="code-key">amount</span>: <span class="code-num">1</span>
+      <span class="code-key">recipes</span>:
+        - <span class="code-key">ingredients</span>: [<span class="code-val">SLIME_BALL</span>, <span class="code-val">RED_DYE</span>]
+        - <span class="code-key">ingredients</span>: [<span class="code-val">HONEYCOMB</span>, <span class="code-val">RED_DYE</span>]
+        - <span class="code-key">ingredients</span>: [<span class="code-val">RESIN_CLUMP</span>, <span class="code-val">RED_DYE</span>]
+    <span class="code-key">lore</span>:
+      - <span class="code-val">"&7Cleans your body"</span>
+      - <span class="code-val">"&7Leaves a strong scent"</span>
+
+  <span class="code-key">gum_deluxe</span>:
+    <span class="code-key">material</span>: <span class="code-val">SLIME_BALL</span>
+    <span class="code-key">category</span>: <span class="code-val">premium</span>
+    <span class="code-key">model</span>: <span class="code-val">soap_gold</span>
+    <span class="code-key">display-name</span>: <span class="code-val">"&eVanilla Deluxe Soap"</span>
+    <span class="code-key">hygiene-amount</span>: <span class="code-num">90</span>
+    <span class="code-key">durability-cost</span>: <span class="code-num">1</span>
+    <span class="code-key">duration</span>: <span class="code-num">20</span>
+    <span class="code-key">cooldown</span>: <span class="code-num">500</span>
+    <span class="code-key">cancel-on-move</span>: <span class="code-bool">false</span>
+    <span class="code-key">price</span>: <span class="code-num">120.0</span>
+    <span class="code-key">crafting</span>:
+      <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+      <span class="code-key">amount</span>: <span class="code-num">1</span>
+      <span class="code-key">recipes</span>:
+        - <span class="code-key">ingredients</span>: [<span class="code-val">SLIME_BALL</span>, <span class="code-val">YELLOW_DYE</span>, <span class="code-val">GOLD_NUGGET</span>]
+        - <span class="code-key">ingredients</span>: [<span class="code-val">HONEYCOMB</span>, <span class="code-val">YELLOW_DYE</span>, <span class="code-val">GOLD_NUGGET</span>]
+        - <span class="code-key">ingredients</span>: [<span class="code-val">RESIN_CLUMP</span>, <span class="code-val">YELLOW_DYE</span>, <span class="code-val">GOLD_NUGGET</span>]
+    <span class="code-key">lore</span>:
+      - <span class="code-val">"&7A premium soap with a"</span>
+      - <span class="code-val">"&7strong fresh vanilla scent"</span>
+      - <span class="code-val">"&r"</span>
+      - <span class="code-val">"&eIncludes bonuses on use"</span>
+    <span class="code-key">effects</span>:
+      - <span class="code-key">type</span>: <span class="code-val">SPEED</span>
+        <span class="code-key">duration</span>: <span class="code-num">400</span>
+        <span class="code-key">amplifier</span>: <span class="code-num">1</span>
+        <span class="code-key">ambient</span>: <span class="code-bool">false</span>
+        <span class="code-key">particles</span>: <span class="code-bool">true</span>
+        <span class="code-key">icon</span>: <span class="code-bool">true</span>
+      - <span class="code-key">type</span>: <span class="code-val">REGENERATION</span>
+        <span class="code-key">duration</span>: <span class="code-num">120</span>
+        <span class="code-key">amplifier</span>: <span class="code-num">0</span>
+        <span class="code-key">ambient</span>: <span class="code-bool">false</span>
+        <span class="code-key">particles</span>: <span class="code-bool">true</span>
+        <span class="code-key">icon</span>: <span class="code-bool">true</span>
+    <span class="code-key">sound</span>:
+      <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+      <span class="code-key">name</span>: <span class="code-val">ENTITY_EXPERIENCE_ORB_PICKUP</span>
+      <span class="code-key">volume</span>: <span class="code-num">1.0</span>
+      <span class="code-key">pitch</span>: <span class="code-num">1.6</span>
+    <span class="code-key">particles</span>:
+      <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+      <span class="code-key">type</span>: <span class="code-val">CHERRY_LEAVES</span>
+      <span class="code-key">count</span>: <span class="code-num">20</span>
+      <span class="code-key">offset-x</span>: <span class="code-num">0.35</span>
+      <span class="code-key">offset-y</span>: <span class="code-num">0.6</span>
+      <span class="code-key">offset-z</span>: <span class="code-num">0.35</span>
+      <span class="code-key">extra</span>: <span class="code-num">0.02</span>
+    <span class="code-key">title</span>:
+      <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+      <span class="code-key">title</span>: <span class="code-val">"&dDeluxe Aroma"</span>
+      <span class="code-key">subtitle</span>: <span class="code-val">"&fNow you smell like fresh vanilla"</span>
+      <span class="code-key">fade-in</span>: <span class="code-num">10</span>
+      <span class="code-key">stay</span>: <span class="code-num">50</span>
+      <span class="code-key">fade-out</span>: <span class="code-num">15</span>
+
+<span class="code-comment">########## ACTIVE WASHING ##########</span>
+<span class="code-key">active</span>:
+  <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+  <span class="code-key">material</span>: <span class="code-val">SLIME_BALL</span>
+  <span class="code-key">hygiene-amount</span>: <span class="code-num">60</span>
+  <span class="code-key">durability-cost</span>: <span class="code-num">1</span>
+  <span class="code-key">duration</span>: <span class="code-num">40</span>
+  <span class="code-key">cooldown</span>: <span class="code-num">1000</span>
+  <span class="code-key">cancel-on-move</span>: <span class="code-bool">false</span>
+
+<span class="code-comment">########## PASSIVE BATHING ##########</span>
+<span class="code-key">passive</span>:
+  <span class="code-key">enabled</span>: <span class="code-bool">true</span>
+  <span class="code-key">hygiene-amount</span>: <span class="code-num">5</span>
+  <span class="code-key">interval</span>: <span class="code-num">100</span>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 HygieneMC Plugin • Developed for Ultimate Immersion</p>
+        </footer>
+    </div>
+
+    <script>
+        // Create background bubbles
+        const container = document.getElementById('bubbles');
+        for (let i = 0; i < 25; i++) {
+            const bubble = document.createElement('div');
+            bubble.className = 'bubble';
+            const size = Math.random() * 60 + 20 + 'px';
+            bubble.style.width = size;
+            bubble.style.height = size;
+            bubble.style.left = Math.random() * 100 + '%';
+            bubble.style.top = Math.random() * 100 + '%';
+            bubble.style.animationDelay = Math.random() * 8 + 's';
+            bubble.style.animationDuration = Math.random() * 10 + 10 + 's';
+            bubble.style.opacity = Math.random() * 0.2;
+            container.appendChild(bubble);
+        }
+
+        // Simple AOS implementation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('[data-aos]').forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>
